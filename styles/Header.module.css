@@ -1,0 +1,198 @@
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+}
+
+.header nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boxLogo a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.btnMenu {
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+}
+
+.btnMenu div {
+  top: 25%;
+  left: 20%;
+  width: 26px;
+  height: 2px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+.btnMenu div::before,
+.btnMenu div::after {
+  top: 50%;
+  left: 50%;
+  content: "";
+  top: 10px;
+  width: 26px;
+  height: 2px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-dark);
+}
+
+.btnMenu div::before {
+  transform: rotate(0deg) translate(0px, -4px);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.btnMenu div:after {
+  transform: rotate(0deg) translate(0px, 4px);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.navlinkMenu li {
+  margin: 2rem 0;
+}
+
+.navlinkMenu li a {
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+.linkBtn {
+  font-size: 1.2rem;
+  padding: 1.5rem 5rem !important;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white) !important;
+  background-color: var(--color-dark);
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+
+/* btn Invite */
+.btnInvite {
+  display: none;
+}
+
+@media screen and (max-width: 899px) {
+  .navlinkMenu {
+    top: -100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 5vh 0;
+    display: flex;
+    z-index: 6;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    pointer-events: none;
+    background-color: var(--color-white);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .btnMenu {
+    display: none;
+  }
+  .navlinkMenu li:nth-child(5) {
+    display: none;
+  }
+
+  .lineMovil {
+    display: none;
+  }
+
+  .header nav {
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .navlinkMenu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btnInvite {
+    display: block;
+  }
+
+  .linkBtn {
+    font-size: 1.1rem;
+    padding: 1.5rem 3rem !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header nav {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .navlinkMenu li a:hover {
+    color: #e38b9a;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+  }
+
+  .linkBtn:hover {
+    background-image: linear-gradient(
+      to right,
+      #e1a095,
+      #e38b9a,
+      #d87aad,
+      #b972c7,
+      #7775e0
+    );
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+  }
+}

@@ -1,0 +1,100 @@
+.bgBanner {
+  height: 50vh;
+  display: flex;
+  padding: 0 4rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #00000080;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-image: url(../public/images/bg-06.jpg);
+}
+
+.bgBanner::before {
+  top: 0;
+  width: 40%;
+  height: 8px;
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    #e1a095,
+    #e38b9a,
+    #d87aad,
+    #b972c7,
+    #7775e0
+  );
+}
+
+.title {
+  width: 80%;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.link {
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.link span {
+  font-size: 2.2rem;
+  padding-left: 1.5rem;
+}
+
+@media screen and (max-width: 599px) {
+  .bgBanner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .colMd {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .bgBanner {
+    height: 30vh;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .colMd {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .bgBanner {
+    height: 20vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .colMd {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bgBanner {
+    height: 30vh;
+    padding: 0 6rem;
+  }
+
+  .bgBanner::before {
+    width: 30%;
+  }
+}

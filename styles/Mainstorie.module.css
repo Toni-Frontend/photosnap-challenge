@@ -1,0 +1,102 @@
+.containerStorie {
+  width: 100%;
+  display: flex;
+  padding: 10rem 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #00000030;
+  background-blend-mode: soft-light;
+  background-image: url(../public/images/bg-04.jpg);
+}
+
+.content {
+  width: 90%;
+  margin: auto;
+}
+
+.content h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1.5rem 0;
+  color: var(--color-white);
+}
+
+.content h2 {
+  width: 70%;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.7;
+  padding: 1.5rem 0;
+  color: var(--color-white);
+}
+
+.date {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 2rem 0;
+  color: var(--color-gray);
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 1.5rem 0;
+  color: var(--color-white);
+}
+
+.content a {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.content a span {
+  font-size: 3rem;
+  padding-left: 2rem;
+}
+
+.containerCards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .containerStorie {
+    height: 80vh;
+    padding: 0 0;
+  }
+
+  .content {
+    width: 40%;
+    margin-left: 10% !important;
+  }
+
+  .description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 1.5rem 0;
+    color: var(--color-white);
+  }
+
+  .containerCards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .content {
+    width: 30%;
+    margin-left: 12% !important;
+  }
+}

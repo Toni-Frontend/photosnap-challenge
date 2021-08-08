@@ -1,0 +1,114 @@
+.containerTable {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 15rem;
+  background-color: var(--color-white);
+}
+
+.h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.lineDark {
+  width: 100%;
+  height: 1px;
+  margin-top: 2rem;
+  background-color: var(--color-dark);
+}
+
+.titleFeature {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-dark);
+}
+
+.itemTable {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.titleItem {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+  color: var(--color-dark);
+}
+
+.colTable {
+  display: grid;
+  padding: 1rem 0;
+  grid-template-columns: 30% 30% 30%;
+}
+
+.typetitle {
+  opacity: 0.6;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-dark);
+}
+
+.fas {
+  font-size: 2rem !important;
+  margin-top: 1.5rem;
+  color: #e38b9a;
+}
+
+.headTable,
+.itemDesktop {
+  display: grid;
+  padding: 1rem 0;
+  grid-template-columns: 1fr repeat(3, 14rem);
+}
+
+.desktopTable {
+  display: none;
+}
+
+.itemDesktop {
+  border-bottom: 1px solid var(--color-gray);
+}
+
+@media screen and (min-width: 600px) {
+  .typetitle {
+    font-size: 1rem;
+  }
+
+  .fas {
+    font-size: 3rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobileTable {
+    display: none;
+  }
+
+  .desktopTable {
+    display: block;
+  }
+
+  .fas {
+    font-size: 3rem !important;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .desktopTable {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .desktopTable {
+    width: 60%;
+    margin: auto;
+  }
+}

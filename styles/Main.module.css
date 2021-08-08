@@ -1,0 +1,240 @@
+.imgOneSection,
+.imgTwoSection,
+.imgThreeSection,
+.imgFourSection,
+.imgFiveSection {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.imgOneSection {
+  background-image: url(../public/images/bg-01.jpg);
+}
+
+.imgTwoSection {
+  background-image: url(../public/images/bg-02.jpg);
+}
+
+.imgThreeSection {
+  background-image: url(../public/images/bg-03.jpg);
+}
+
+.imgFourSection {
+  background-image: url(../public/images/bg-05.jpg);
+}
+
+.imgFiveSection {
+  background-image: url(../public/images/bg-07.jpg);
+}
+
+.contentOne {
+  padding: 0rem 3rem;
+  height: 100%;
+  display: grid;
+  position: relative;
+  justify-items: flex-start;
+  place-content: center;
+  color: var(--color-white);
+  background-color: var(--color-dark);
+}
+
+.contentOne::after {
+  top: 0;
+  left: 2rem;
+  width: 40%;
+  height: 8px;
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    #e1a095,
+    #e38b9a,
+    #d87aad,
+    #b972c7,
+    #7775e0
+  );
+}
+
+.contentTwo {
+  padding: 0rem 3rem;
+  height: 100%;
+  display: grid;
+  justify-items: flex-start;
+  place-content: center;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}
+
+.contentOne h1,
+.contentTwo h1 {
+  line-height: 1.7;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contentOne p,
+.contentTwo p {
+  margin-top: 2rem;
+  line-height: 1.7;
+  font-size: 1.5rem;
+}
+
+.btnInvite {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 6rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: start;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  color: var(--color-white);
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+.contentTwo .btnInvite {
+  color: var(--color-dark);
+}
+
+@media screen and (max-width: 599px) {
+  .sectionOne,
+  .sectionTwo {
+    height: unset;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .contentTwo,
+  .contentOne {
+    height: 50vh;
+    padding: 5rem 4rem;
+  }
+
+  .imgOneSection,
+  .imgTwoSection,
+  .imgThreeSection,
+  .imgFourSection,
+  .imgFiveSection {
+    height: 50vh;
+    grid-row: 1;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .sectionOne,
+  .sectionTwo {
+    height: unset;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .contentTwo,
+  .contentOne {
+    height: 50vh;
+    padding: 5rem 4rem;
+  }
+
+  .imgOneSection,
+  .imgTwoSection,
+  .imgThreeSection,
+  .imgFourSection,
+  .imgFiveSection {
+    height: 50vh;
+    grid-row: 1;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .sectionOne,
+  .sectionTwo {
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 55% auto;
+  }
+
+  .contentTwo,
+  .contentOne {
+    height: 100%;
+    padding: 0rem 4rem;
+  }
+
+  .imgOneSection,
+  .imgThreeSection,
+  .imgFourSection,
+  .imgFiveSection {
+    height: 100%;
+    grid-row: auto;
+  }
+
+  .imgOneSection {
+    grid-row: auto;
+  }
+  .imgTwoSection {
+    grid-row: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sectionOne,
+  .sectionTwo {
+    height: 70vh;
+  }
+  .sectionOne {
+    grid-template-columns: auto 55%;
+  }
+  .sectionTwo {
+    grid-template-columns: 55% auto;
+  }
+
+  .imgTwoSection {
+    height: 100%;
+  }
+
+  .contentOne,
+  .contentTwo {
+    padding: 0 10rem;
+  }
+
+  .contentOne p,
+  .contentTwo p {
+    font-size: 1.4rem;
+  }
+  .btnInvite:hover  {
+    color: #e38b9a;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+  }
+
+  .contentOne::after {
+    top: 20%;
+    left: 0;
+    width: 8px;
+    height: 50%;
+    background-image: linear-gradient(
+      to bottom,
+      #e38b9a,
+      #dd7da7,
+      #cc75b9,
+      #ad72cd,
+      #7775e0
+    );
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .contentOne p,
+  .contentTwo p {
+    width: 60%;
+    font-size: 1.4rem;
+  }
+}
