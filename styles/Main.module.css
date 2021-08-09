@@ -114,7 +114,7 @@
 
   .contentTwo,
   .contentOne {
-    height: 50vh;
+    height: 70vh;
     padding: 5rem 4rem;
   }
 
@@ -207,7 +207,7 @@
   .contentTwo p {
     font-size: 1.4rem;
   }
-  .btnInvite:hover  {
+  .btnInvite:hover {
     color: #e38b9a;
     transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
