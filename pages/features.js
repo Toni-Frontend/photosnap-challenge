@@ -10,7 +10,7 @@ const Features = () => {
       <SectionF />
       <Banner />
     </Layout>
-  );
+  );s
 };
 
 export default Features;

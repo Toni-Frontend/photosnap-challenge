@@ -1,13 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Card.module.css";
+import PropTypes from "prop-types";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
+import styles from "../styles/Card.module.css";
 
 const Card = ({ title, creator, img }) => {
   return (
     <div className={styles.card}>
       <div className={styles.imageWrapper}>
-        <Image loading="eager" layout="fill" src={img} alt="" />
+        <Image
+          loading="eager"
+          priority
+          layout="fill"
+          src={img}
+          alt="Image provider"
+        />
       </div>
       <div className={styles.contentText}>
         <h3>{title}</h3>
@@ -24,3 +31,9 @@ const Card = ({ title, creator, img }) => {
 };
 
 export default Card;
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  creator: PropTypes.string.isRequired,
+  img: PropTypes.object.isRequired,
+};
