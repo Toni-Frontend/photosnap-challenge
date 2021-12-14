@@ -1,6 +1,6 @@
 ## Image Preview
 
-![image](blob:https://vercel.com/b5f9a070-1134-4611-a88b-12e86bccb4c7)
+![image](https://github.com/TonyBravo-FrontDev/photosnap-challenge/blob/public/img/photosnap.png)
 
 ## Getting Started
 
