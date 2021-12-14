@@ -1,6 +1,6 @@
 ## Image Preview
 
-![image](https://github.com/TonyBravo-FrontDev/photosnap-challenge/blob/public/img/photosnap.png)
+![image](https://github.com/TonyBravo-FrontDev/photosnap-challenge/blob/main/public/img/photosnap.png)
 
 ## Getting Started
 
